@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking - MediCare Hospital</title>
+    <link rel="stylesheet" href="book-appointment.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">MediCare</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">Who We Are</a>
+                <a href="index.html#location">Location</a>
+                <a href="departments.html">Departments</a>
+                <a href="book-appointment.html">Book an Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="book-appointment">
+        <div class="hero-content">
+            <h1>Book an Appointment</h1>
+            <p>Schedule your visit to MediCare Hospital easily by filling out the form below.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="section-container">
+            <div class="section-title">
+                <h2>Appointment Booking Form</h2>
+            </div>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="branch">Select Branch</label>
+                    <select id="branch" name="branch" required>
+                        <option value="medina">Medina</option>
+                        <option value="riyadh">Riyadh</option>
+                        <option value="jeddah">Jeddah</option>
+                        <option value="dammam">Dammam</option>
+                        <option value="makkah">Makkah</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="department">Select Department</label>
+                    <select id="department" name="department" required>
+                        <option value="surgery">Surgery</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="obgyn">Obstetrics & Gynecology</option>
+                        <option value="radiology">Radiology</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Select Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Select Time</label>
+                    <select id="time" name="time" required>
+                        <option value="08:00">08:00 AM</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">01:00 PM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="16:00">04:00 PM</option>
+                        <option value="17:00">05:00 PM</option>
+                        <option value="18:00">06:00 PM</option>
+                        <option value="19:00">07:00 PM</option>
+                        <option value="20:00">08:00 PM</option>
+                        <option value="21:00">09:00 PM</option>
+                        <option value="22:00">10:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-button">
+                    <button type="submit">Book Appointment</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MediCare Hospital. All rights reserved.</p>
+    </footer>
+</body>
+</html>
